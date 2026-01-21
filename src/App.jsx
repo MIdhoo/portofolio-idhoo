@@ -13,7 +13,7 @@ import {
 
 // --- FIREBASE INTEGRATION ---
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithRedirect, signOut, onAuthStateChanged, getRedirectResult } from "firebase/auth";
 import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, limit, serverTimestamp } from "firebase/firestore";
 
 // ✅ FIREBASE CONFIGURATION (CONFIGURED)
@@ -1686,6 +1686,12 @@ const ForumSection = () => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
     });
+    // Handle redirect result for GitHub Pages
+    getRedirectResult(auth).catch((error) => {
+      if (error.code !== 'auth/popup-closed-by-user') {
+        console.error("Redirect login error:", error);
+      }
+    });
     return () => unsubscribe();
   }, []);
 
@@ -1704,7 +1710,7 @@ const ForumSection = () => {
       alert("⚠️ KONFIGURASI DIPERLUKAN: Ganti 'firebaseConfig' di dalam kode dengan data dari Firebase Console Anda.");
       return;
     }
-    try { await signInWithPopup(auth, googleProvider); }
+    try { await signInWithRedirect(auth, googleProvider); }
     catch (error) { console.error("Login Gagal:", error); alert(`Gagal login: ${error.message}`); }
   };
 
