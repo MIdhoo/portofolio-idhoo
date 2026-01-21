@@ -74,11 +74,11 @@ const PERSONAL_INFO = {
 };
 
 const PROJECTS = [
-  { id: 1, title: "EcoSense IoT", cat: "Smart City", img: "/images/projects/ecosense_iot.png", gradient: "from-emerald-900 to-emerald-600", desc: "Monitoring lingkungan real-time.", year: "2024" },
-  { id: 2, title: "Campus AR", cat: "Augmented Reality", img: "/images/projects/campus_ar.png", gradient: "from-purple-900 to-indigo-600", desc: "Navigasi spasial interaktif.", year: "2023" },
-  { id: 3, title: "Data Viz", cat: "Analytics", img: "/images/projects/data_viz.png", gradient: "from-orange-900 to-red-600", desc: "Visualisasi data kompleks D3.js.", year: "2023" },
-  { id: 4, title: "Porto V2", cat: "Immersive Web", img: "/images/projects/porto_v2.png", gradient: "from-blue-900 to-cyan-600", desc: "Eksperimen desain web.", year: "2025" },
-  { id: 5, title: "Home Hub", cat: "IoT", img: "/images/projects/home_hub.png", gradient: "from-slate-800 to-slate-500", desc: "Kontrol rumah pintar.", year: "2024" }
+  { id: 1, title: "EcoSense IoT", cat: "Smart City", img: "./images/projects/ecosense_iot.png", gradient: "from-emerald-900 to-emerald-600", desc: "Monitoring lingkungan real-time.", year: "2024" },
+  { id: 2, title: "Campus AR", cat: "Augmented Reality", img: "./images/projects/campus_ar.png", gradient: "from-purple-900 to-indigo-600", desc: "Navigasi spasial interaktif.", year: "2023" },
+  { id: 3, title: "Data Viz", cat: "Analytics", img: "./images/projects/data_viz.png", gradient: "from-orange-900 to-red-600", desc: "Visualisasi data kompleks D3.js.", year: "2023" },
+  { id: 4, title: "Porto V2", cat: "Immersive Web", img: "./images/projects/porto_v2.png", gradient: "from-blue-900 to-cyan-600", desc: "Eksperimen desain web.", year: "2025" },
+  { id: 5, title: "Home Hub", cat: "IoT", img: "./images/projects/home_hub.png", gradient: "from-slate-800 to-slate-500", desc: "Kontrol rumah pintar.", year: "2024" }
 ];
 
 const ROUTINE = [
