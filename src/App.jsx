@@ -34,7 +34,7 @@ const db = getFirestore(app);
 
 // --- GEMINI API HELPER ---
 const callGemini = async (prompt, systemContext = "") => {
-  const apiKey = "AIzaSyB3nKR5kXNUQu40QAqwHQKHs2nBPOeejg4";
+  const apiKey = "AIzaSyCrrg0D5ek-Eh_-WqaEQRoU6ADhhLNyJbs";
   if (!apiKey) {
     console.warn("Gemini API Key tidak ditemukan.");
     return "Mode Demo: Hubungkan API Key untuk respons AI yang sebenarnya.";
