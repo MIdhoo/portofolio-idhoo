@@ -1070,9 +1070,6 @@ const ProjectArchitect = () => {
     <section className="bg-[#020617] py-32 px-6 relative z-40 border-t border-white/5">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/30 border border-emerald-500/30 text-emerald-400 text-xs font-mono mb-4">
-            <Sparkles size={12} /> AI POWERED
-          </div>
           <h2 className="text-4xl font-bold text-white mb-4">The Architect Engine</h2>
           <p className="text-slate-400">Punya ide liar? Biarkan AI saya merancang blueprint teknis awalnya.</p>
         </div>
